@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div id="start-screen" class="screen">
+      <h1>Quiz Game</h1>
+      <p>Test your knowledge with this fun multiple choice quiz!</p>
+      <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <div id="quiz-screen" class="screen hidden">
+      <div class="quiz-header">
+        <div id="question-counter">Question 1/5</div>
+        <div id="score-display">Score: 0</div>
+      </div>
+      <h2 id="question-text">Question goes here</h2>
+      <div id="options-container" class="options">
+        <!-- Options will be inserted by JavaScript -->
+      </div>
+    </div>
+
+    <div id="result-screen" class="screen hidden">
+      <h2>Game Over!</h2>
+      <p id="final-score">Your score: 0/5</p>
+      <p id="feedback-message"></p>
+      <button id="play-again-btn">Play Again</button>
+    </div>
+  </div>
+  
+  <script src="index.js"></script>
+</body>
+</html>
